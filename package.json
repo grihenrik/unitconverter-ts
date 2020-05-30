@@ -1,0 +1,30 @@
+{
+  "name": "unitconverter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/dist/index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/tsc.cmd && node ./dist/index.js",
+    "run-ts": "webpack && node ./dist/index.js",
+    "build-ts": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Henrik Gripenberg",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.0.3",
+    "source-map": "^0.7.3",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.4.0",
+    "require": "^2.4.20"
+  }
+}

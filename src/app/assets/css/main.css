@@ -1,0 +1,6 @@
+@font-face{
+    font-family: 'FontAwsome';
+    src: url('../font/fa-regular-400.woff?v=5.13.0') format('.woff'), 
+    url('../font/fa-regular-400.ttf?v=5.13.0') format('.ttf'), 
+    url('../font/fa-regular-400.eot?v=5.13.0') format('.eot');
+}

@@ -1,0 +1,8 @@
+/**
+* Main style file
+*/
+@import "./bootstrap.css";
+
+body {
+    color:red;
+}

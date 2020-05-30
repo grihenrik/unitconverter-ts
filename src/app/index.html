@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/bootstrap.css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
+    <title>Unit Converter</title>
+</head>
+<body>
+    <div class="container" id="main-container">
+        <div class="jumbotron" style="padding:2rem 1rem;">
+            <h2 class="text-primary text-center">Converter 4 everything</h2>
+        </div>
+        <form >
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label for="selectCategory">Category for conversion</label>
+                        <select class="form-control small" name="selectCategory" id="selectCategory" >
+                            
+                        </select>
+                    </div>
+
+                </div>
+                <div class="col-sm-2 text-center">
+                    <span id="category-icon"><i class="fa fa-thermometer-full fa-3x"></i></span>
+                </div>
+                <div class="col-sm-5">
+                    <label for="selectConverter">Converter</label>
+                    <select class="form-control small" name="selectConverter" id="selectConverter" >
+                        <option value="Celsius to Farenheit">Celsus to Farenheit</option>
+                        
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label for="inputValue" id="inputValueLabel">Input</label>
+                        <input type="text" id="inputValue" class="form-control small">
+                    </div>
+                </div>
+                <div class="col-sm-2 text-center" style="margin: auto,0;">
+                    <button class="btn btn-primary" id="convertButton">Convert</button>
+
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label for="outputValue">Output</label>
+                        <input type="text" id="outputValue" class="form-control small">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    
+        
+    
+
+    <!-- Jquery -->
+    <script src="./assets/js/jquery-3.5.1.js"></script>
+    <!-- Bootstrap -->
+    <script src="./assets/js/bootstrap.js"></script>
+    
+    
+    
+
+</body>
+</html>
