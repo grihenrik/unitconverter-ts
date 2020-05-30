@@ -46,15 +46,13 @@ export class categoriesHandler {
             eOut.value = valueOut;
         }
         event.preventDefault();
-        console.log(`Click ${valueIn}`);
+//        console.log(`Click ${valueIn}`);
     }
     setCategoryIcon(category:number){
         let ico = document.getElementById("category-icon");
         let iconImages = ['<i class="fa fa-thermometer-full fa-3x"></i>','<i class="fa fa-road fa-3x"></i>','<i class="fa fa-user fa-3x"></i>','<i class="fa fa-money fa-3x"></i>'];
-        console.log(iconImages[category]);
         if(ico) {
             ico.innerHTML = iconImages[category];
-            console.log(ico);
         }
         
     }
@@ -68,7 +66,6 @@ export class categoriesHandler {
         });
     }
     setConverterSelection(converters:any){
-        console.log(converters);
         let conv = document.getElementById("selectConverter");
         let cnt = conv?.childElementCount;
         for( let i = 0; i<=(cnt?cnt:0);i++){
@@ -84,20 +81,19 @@ export class categoriesHandler {
     }
     categoryChange(event: Event){
         this.resetInput();
-        
         event.preventDefault();
         let e = document.getElementById("selectCategory") as any;
         this.categoriesIndex = e.selectedIndex;
         this.setCategoryIcon(this.categoriesIndex);
         this.setConverterSelection(this.categories[this.categoriesIndex]);
+        this.converterChange(event);
     }
     converterChange(event: Event){
-        
         event.preventDefault();
         let e = document.getElementById("selectConverter") as any;
         this.converterIndex = e.selectedIndex;
         console.log(this.converterIndex);
-        //this.setConverterSelection(this.categories[this.categoriesIndex]);
+        
     }
     resetInput(){
         let eIn = document.getElementById("inputValue") as HTMLInputElement;

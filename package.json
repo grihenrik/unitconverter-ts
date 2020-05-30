@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/dist/index.js",
   "scripts": {
-    "start": "./node_modules/.bin/tsc.cmd && node ./dist/index.js",
+    "project": "./node_modules/.bin/webpack-dev-server",
     "run-ts": "webpack && node ./dist/index.js",
     "build-ts": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
